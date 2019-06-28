@@ -1,0 +1,24 @@
+﻿@page
+@model MijnInschrijvingenModel
+@{
+    ViewData["Title"] = "MijnInschrijvingen";
+}
+
+<h2>Mijn Inschrijvingen</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 Machine" style="padding-right: 15px;">
+            <h4>Machine:</h4>
+            <p style="word-wrap: break-word;">@Model.Machine</p>
+        </div>
+        <div class="col-lg-3 Datum" style="padding-right: 15px;">
+            <h4>Datum:</h4>
+            <p style="word-wrap: break-word;">@Model.Datum</p>
+        </div>
+        <div class="col-lg-3 Tijd" style="padding-right: 15px;">
+            <h4>Tijd:</h4>
+            <p style="word-wrap: break-word;">@Model.Tijd</p>
+        </div>     
+    </div>
+</div>

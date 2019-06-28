@@ -1,0 +1,226 @@
+﻿@page
+@model InschrijvenModel
+@{
+    ViewData["Title"] = "Inschrijven";
+}
+
+<h2>Inschrijven Wasrooster</h2>
+
+<div class="container">
+    <div class="row">
+        <form class="AddDataForm" method="post" asp-controller="Index" asp-action="Login">
+            <div class="col-lg-12 DataForm">
+                <div class="col-lg-4">
+                    <h3>Selecteer een datum:</h3>
+                    <div class="form-group">
+                        <label asp-for="Datum" class="control-label"></label>
+                        <input asp-for="Datum" class="form-control" />
+                        <span asp-validation-for="Datum" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="col-lg-2">
+                    <h4>Wasmachine 1:</h4>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine1" id="6.00-7.30" />   6.00-7.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine1" id="7.30-9.00" />   7.30-9.00
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine1" id="9.00-10.30" />  9.00-10.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine1" id="10.30-12.00" /> 10.30-12.00
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine1" id="12.00-13.30" /> 12.00-13.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine1" id="13.30-15.00" /> 13.30-15.00
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine1" id="15.00-16.30" /> 15.00-16.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine1" id="16.30-18.00" /> 16.30-18.00
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine1" id="18.00-19.30" /> 18.00-19.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine1" id="19.30-21.00" /> 19.30-21.00
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine1" id="21.00-22.30" /> 21.00-22.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine1" id="22.30-0.00" />  22.30-0.00
+                    </label>
+                </div>
+                <div class="col-lg-2">
+                    <h4>Wasmachine 2:</h4>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine2" id="6.00-7.30" /> 6.00-7.30
+                    </label>
+                    <label class="btn btn-default" style="width: 120px;">
+                        <input type="radio" name="Wasmachine2" id="7.30-9.00" /> 7.30-9.00
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine2" id="9.00-10.30" /> 9.00-10.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine2" id="10.30-12.00" /> 10.30-12.00
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine2" id="12.00-13.30" /> 12.00-13.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine2" id="13.30-15.00" /> 13.30-15.00
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine2" id="15.00-16.30" /> 15.00-16.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine2" id="16.30-18.00" /> 16.30-18.00
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine2" id="18.00-19.30" /> 18.00-19.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine2" id="19.30-21.00" /> 19.30-21.00
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine2" id="21.00-22.30" /> 21.00-22.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine2" id="22.30-0.00" /> 22.30-0.00
+                    </label>
+                </div>
+                <div class="col-lg-2">
+                    <h4>Wasmachine 3:</h4>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine3" id="6.00-7.30" /> 6.00-7.30
+                    </label>
+                    <label class="btn btn-default" style="width: 120px;">
+                        <input type="radio" name="Wasmachine3" id="7.30-9.00" /> 7.30-9.00
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine3" id="9.00-10.30" /> 9.00-10.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine3" id="10.30-12.00" /> 10.30-12.00
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine3" id="12.00-13.30" /> 12.00-13.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine3" id="13.30-15.00" /> 13.30-15.00
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine3" id="15.00-16.30" /> 15.00-16.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine3" id="16.30-18.00" /> 16.30-18.00
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine3" id="18.00-19.30" /> 18.00-19.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine3" id="19.30-21.00" /> 19.30-21.00
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine3" id="21.00-22.30" /> 21.00-22.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Wasmachine3" id="22.30-0.00" /> 22.30-0.00
+                    </label>
+                </div>
+                <div class="col-lg-2">
+                    <h4>Droger 4:</h4>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Droger1" id="6.00-7.30" /> 6.00-7.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Droger1" id="7.30-9.00" /> 7.30-9.00
+                    </label>
+                    <label class="btn btn-default" style="width: 120px;">
+                        <input type="radio" name="Droger1" id="9.00-10.30" /> 9.00-10.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Droger1" id="10.30-12.00" /> 10.30-12.00
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Droger1" id="12.00-13.30" /> 12.00-13.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Droger1" id="13.30-15.00" /> 13.30-15.00
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Droger1" id="15.00-16.30" /> 15.00-16.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Droger1" id="16.30-18.00" /> 16.30-18.00
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Droger1" id="18.00-19.30" /> 18.00-19.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Droger1" id="19.30-21.00" /> 19.30-21.00
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Droger1" id="21.00-22.30" /> 21.00-22.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Droger1" id="22.30-0.00" />  22.30-0.00
+                    </label>
+                </div>
+                <div class="col-lg-2">
+                    <h4>Droger 5:</h4>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Droger2" id="6.00-7.30" /> 6.00-7.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Droger2" id="7.30-9.00" />   7.30-9.00
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Droger2" id="9.00-10.30" />  9.00-10.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Droger2" id="10.30-12.00" /> 10.30-12.00
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Droger2" id="12.00-13.30" /> 12.00-13.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Droger2" id="13.30-15.00" /> 13.30-15.00
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Droger2" id="15.00-16.30" /> 15.00-16.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Droger2" id="16.30-18.00" /> 16.30-18.00
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Droger2" id="18.00-19.30" /> 18.00-19.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Droger2" id="19.30-21.00" /> 19.30-21.00
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Droger2" id="21.00-22.30" /> 21.00-22.30
+                    </label>
+                    <label class="btn btn-primary" style="width: 120px;">
+                        <input type="radio" name="Droger2" id="22.30-0.00" />  22.30-0.00
+                    </label>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+            <div class="col-lg-2">
+                <input type="submit" value="Bevestigen" class="btn btn-primary" />
+            </div>
+    </div>
+    </form>
+</div>
+</div>

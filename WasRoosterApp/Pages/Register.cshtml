@@ -1,0 +1,43 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-5 DataForm">
+            <form class="AddDataForm" method="post" asp-controller="AddBlock" asp-action="AddData">
+                <h2>Registeren</h2>
+                <div class="form-group">
+                    <label asp-for="Username" class="surname">Gebruikersnaam:</label>
+                    <input asp-for="Username" class="form-control" maxlength="256" />
+                    <span asp-validation-for="Username" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" class="surname">Email:</label>
+                    <input asp-for="Email" class="form-control" maxlength="256" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Unit" class="surname">Kamernummer:</label>
+                    <input asp-for="Unit" class="form-control" maxlength="256" />
+                    <span asp-validation-for="Unit" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password" class="surname">Wachtwoord:</label>
+                    <input asp-for="Password" class="form-control" maxlength="256" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password" class="surname">Herhaal Wachtwoord:</label>
+                    <input asp-for="Password" class="form-control" maxlength="256" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div>
+                    <input type="submit" value="Registreer" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
